@@ -1,0 +1,169 @@
+@media(max-width: 992px) {
+    .container {
+        max-width: 700px;
+    }
+    .header {
+        &__logo {                 
+            img {
+                width: 85%;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+            margin: 0 auto;
+        }
+        &__official {
+            padding-right: 35px; // поправить, изменить ширину header__logo
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 22px;
+        }
+    }
+    .opportunities {
+        &__icons {
+            width: 205px;
+            font-size: 13px;
+        }
+    }
+
+}
+
+@media(max-width: 768px) {
+   
+    .header {
+        margin: 0 12px;
+        &__logo {            
+            width: 200px;                
+            img {
+                width: 90%;
+            }
+        }
+        &__official {
+            font-size: 10px;
+            padding-left: 0px; // поправить в связи с предыдущим медиа правилом
+            span {
+                font-size: 14px;
+            }
+        }  
+        &__phone {
+            font-size: 14px;
+        }  
+        
+    }
+    .button {
+        width: 130px;
+        font-size: 11px;
+
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 33px;
+        }
+        &__subheader {
+            font-size: 19px;
+        }
+        .button_main {
+            width: 270px;
+            font-size: 15px;
+
+        }
+    }
+    .opportunities {
+        padding: 55px 12px 60px; 
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__icons {
+            width: 165px;
+            span {
+                font-size: 15px;
+            }
+            img {
+                margin: 0 auto 26px;
+            }
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+@media(max-width: 575px) {
+    .container {
+        width: 320px;
+    }
+    .header {
+        height: 115px;
+        flex-direction: column;
+        align-items: center;        
+        margin: 0 auto;
+        &__logo {            
+            width: 250px;                
+            img {
+                width: 100%;
+            }
+        }
+        &__official {
+            display: none;
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        .button {
+            width: 150px;
+            font-size: 12px;
+    
+        }
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 70px;
+        }
+        &__header {
+            font-size: 32px;
+            text-align: center;
+            line-height: 35px;            
+        }
+        &__subheader {
+            text-align: center;
+            font-size: 16px;
+        }
+        &__icons {
+            width: 310px;
+            
+        }
+        &__icon {
+            font-size: 13px;
+        }
+    }
+    .opportunities {
+        padding: 45px 0 55px;
+        &__header {
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__wrapper {
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__icons {
+            width: 240px;
+            font-size: 15px;
+            line-height: 19px;
+            span {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            img {
+                margin: 25px auto 15px;
+            }
+        }
+    }
+}

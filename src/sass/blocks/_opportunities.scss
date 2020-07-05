@@ -1,0 +1,36 @@
+.opportunities {
+    min-height: 470px;
+    background-color: #f6f6f6;
+    padding: 70px 0 78px;     
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;        
+        margin-top: 65px;
+    }
+    &__icons {
+        text-align: center;
+        width: 240px;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 19px;
+       
+        img {
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 38px;  
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700; 
+            margin-bottom: 26px;
+        }
+        a {
+            color: #ff0000;
+
+        }
+    
+
+    }
+}
