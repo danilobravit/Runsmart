@@ -33,7 +33,7 @@
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 768px) {    
    
     .header {
         margin: 0 12px;
@@ -58,6 +58,10 @@
     .button {
         width: 130px;
         font-size: 11px;
+        &_submit {
+            width: 100%;
+            font-size: 16px;
+        }
 
     }
     .promo {
@@ -75,7 +79,7 @@
             font-size: 15px;
 
         }
-    }
+    }    
     .opportunities {
         padding: 55px 12px 60px; 
         &__wrapper {
@@ -93,10 +97,25 @@
             line-height: 15px;
         }
     }
+    .consultation {
+        min-height: 630px;
+        padding: 60px 12px 40px;
+        &__descr {
+            font-size: 18px;
+            
+        }
+    }
+    .title {
+        &_left {
+            font-size: 33px;
+
+        }
+    }    
+   
 }
 @media(max-width: 575px) {
     .container {
-        width: 320px;
+        width: 300px;
     }
     .header {
         height: 115px;
@@ -144,10 +163,7 @@
     }
     .opportunities {
         padding: 45px 0 55px;
-        &__header {
-            font-size: 28px;
-            line-height: 33px;
-        }
+        
         &__wrapper {
             margin-top: 20px;
             flex-direction: column;
@@ -166,4 +182,37 @@
             }
         }
     }
+    .consultation {  
+        min-height: 620px;  
+        padding: 45px 10px;
+        &__descr {
+            text-align: center;
+            line-height: 21px;
+        }
+    }
+    .title {
+        font-size: 28px;
+        line-height: 32px;        
+        &_left {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+    } 
+    
+    .feed-form {        
+        width: 280px;
+        margin: 36px auto 0;      
+        input {
+            height: 45px;
+            
+        }
+    }
+    .button {
+        &_submit {
+            height: 50px;
+        }
+    }
+    
 }
