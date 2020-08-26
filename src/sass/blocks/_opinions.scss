@@ -1,0 +1,51 @@
+.opinions {
+    &__content {
+        margin-top: 70px;
+    }
+    &-item {
+        padding-left: 232px;
+        position: relative;
+        margin: 50px 0 48px 0;
+        &:before {
+            content: "";            
+            background-size: 169px 169px;
+            width: 169px;
+            height: 169px;
+            position: absolute;
+            left: 0px;
+        }
+        &__irina {
+            &:before {                
+                background-image: url(../../img/Irina.png);
+            }
+        }
+        &__ivan {
+            &:before {
+            background-image: url(../../img/Ivan.png);
+            }
+        }
+        &__julia {
+            &:before {
+            background-image: url(../../img/Yulia.png);
+            }
+        }
+
+        &__person {
+            font-size: 18px;
+            font-weight: 700;           
+
+        }
+        &__subtitle {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 25px;
+        }
+        &__descr {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            margin-top: 10px;
+            color: #0d0d0d;
+        }
+    }
+}

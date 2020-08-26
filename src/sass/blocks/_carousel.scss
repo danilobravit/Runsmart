@@ -1,0 +1,37 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        
+
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #ffffff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        right: -66px;
+        left: auto;
+    }
+
+    // in a case of using "tiny slider" (".tns-item" - from html elements in browser). For styling - You can find name of each class in the code of element.
+    /* .tns-item {   
+        img {
+            display: block;
+            margin: 0 auto;
+        }    
+
+    }     */
+    
+}
+

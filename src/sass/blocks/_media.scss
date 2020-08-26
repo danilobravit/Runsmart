@@ -30,6 +30,22 @@
             font-size: 13px;
         }
     }
+    .carousel {
+        &__inner {
+            width: 80%;
+             img {
+                width: 100%;
+            } 
+        }
+    }
+    .footer {
+        &__info {
+            width: 370px;
+            padding: 40px 39px 33px 39px;
+            height: 255px;
+
+        }
+    }
 
 }
 
@@ -110,7 +126,71 @@
             font-size: 33px;
 
         }
+    }
+    .carousel {
+        &__inner {
+            width: 70%;
+             img {
+                width: 100%;
+            } 
+        }
     }    
+    .catalog {
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 155px;
+            font-size: 15px;
+        }
+        &__content {
+            margin-top: 50px;
+            justify-content: center;
+        }
+        &-item_triathlon-first {
+            margin-right: 0;
+        }
+    }
+    .opinions {
+        &-item {
+            margin-bottom: 30px;
+            padding: 0 10px 0 200px;
+            &__descr {
+                font-size: 14px;
+                
+            }
+            &:before {
+               background-size: 150px 150px;
+               width: 150px;
+               height: 150px;
+               left: 15px;
+            }
+        }
+        &__content {
+            hr {
+                width: 90%;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            width: 295px;
+            padding: 15px 3px 15px;
+            height: 190px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
+        }
+    }
    
 }
 @media(max-width: 575px) {
@@ -155,9 +235,11 @@
         }
         &__icons {
             width: 310px;
+            justify-content: center;
             
         }
         &__icon {
+            width: 95px;
             font-size: 13px;
         }
     }
@@ -184,12 +266,29 @@
     }
     .consultation {  
         min-height: 620px;  
-        padding: 45px 10px;
+        padding: 45px 0px;
         &__descr {
             text-align: center;
             line-height: 21px;
         }
     }
+    .carousel {
+        padding: 50px 0;
+        &__inner {
+            width: 100%;
+             img {
+                width: 100%;
+            } 
+        }
+        .slick-prev, .slick-next {
+            display: none;            
+            img {
+                display: none;
+                width: 25px;
+                height: 35px;
+            }
+        }
+    }   
     .title {
         font-size: 28px;
         line-height: 32px;        
@@ -212,6 +311,75 @@
     .button {
         &_submit {
             height: 50px;
+        }
+    }
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            flex-direction: column;
+            margin-top: 35px;
+        }
+        &__tab {
+            width: 180px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        &__content {
+            margin-top: 40px;
+            justify-content: center;
+        }
+        &-item {
+            width: 290px;
+        }
+        &-item_triathlon-first {
+            margin-right: 0;
+        }
+    }
+    .opinions {
+        &-item {
+            padding: 150px 10px 0;
+            &__person, &__subtitle {
+                text-align: center;
+            }
+
+            &__descr {
+                font-size: 14px;                
+                text-align: center;
+                
+            }
+            &:before {               
+               left: 0;
+               top: -20px;
+               transform: translateX(50%);
+            }
+        }
+        &__content {
+            hr {
+                width: 90%;
+            }
+        }
+    }
+    .footer {  
+        height: 500px;  
+        iframe {
+            height: 500px;
+        }    
+        &__info {
+            width: 320px;
+            padding: 15px 3px 15px;
+            height: 150px;
+        }
+        &__addr {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
         }
     }
     
