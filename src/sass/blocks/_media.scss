@@ -382,5 +382,24 @@
             height: 45px;
         }
     }
+
+    .modal {
+        width: 300px;
+        padding: 35px 30px;
+        &__descr {
+            font-size: 15px;
+        }
+        &__close {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+
+    }
+    
+    .feed-form {
+        width: 240px;
+
+    }
     
 }
