@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,15 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">  -->
     <link rel="stylesheet" href="css/slick.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -66,9 +70,9 @@
     </section>
     <section class="opportunities">
         <div class="container">
-            <div class="title">
+            <h2 class="title">
                 НАШИ ПРЕИМУЩЕСТВА
-            </div>
+            </h2>
             <div class="opportunities__wrapper">
                 <div class="opportunities__icons">
                     <img src="icons/cup.png" alt="cup">
@@ -77,7 +81,7 @@
                     так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                 </div>
                 <div class="opportunities__icons">
-                    <img src="icons/heart.png" alt="heart">
+                    <img src="icons/heart.png" alt="heart"  class="opportunities__icons_animated">
                     <span>Заботимся о здоровье</span>
                     Мы работаем для того, 
                     чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!                    
@@ -107,9 +111,9 @@
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут                
             </div>
-            <f" class="feed-form" action="#">                
+            <form id="consultation-form" class="feed-form" action="#">                
                 <input name="name" required maxlength="15" placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон" >
                 <input name="email" required placeholder="Ваш E-mail" type="email">               
                
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
@@ -121,7 +125,7 @@
 
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner"> 
 
@@ -135,34 +139,10 @@
                     <img src="img/polar_m600_trio.jpg" alt="slide_3">
                 </div>              
             </div> 
-            <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/polar_rc3gps.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src= "img/polar-m400-triple.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/polar_m600_trio.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div> -->
-           <!--  <button type="button" class="slick-prev"><img src="img/chevron-left-solid.png"></button>
-            <button type="button" class="slick-next"><img src="img/chevron-right-solid.png"></button> -->
-        </div>
-        
-       
 
-    </section>
+        </div>      
+       
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -190,9 +170,11 @@
                             <li>Также Вы увидите информацию о расходе калорий за тренировку;
                             </li>
                             <li>Вы сможете посмотреть данные по 10 тренировкам.
-                            </li> 
-                            <a href="#" class="catalog-item__back">назад</a>                           
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                                                                                  
                         </ul>
+                        
                     </div>
                     
                     <hr> 
@@ -516,9 +498,9 @@
 
     <section class="opinions">
         <div class="container">
-            <div class="title">отзывы клиентов</div>
+            <h2 class="title">отзывы клиентов</h2>
             <div class="opinions__content">
-                <div class="opinions-item opinions-item__irina ">                    
+                <div class="opinions-item opinions-item__irina animate__animated animate__fadeInRight wow " data-wow-duration="1s" data-wow-delay="0.5s">                    
                     <div class="opinions-item__person">Ирина Иванченко</div>
                     <div class="opinions-item__subtitle">2 полумарафона</div>
                     <div class="opinions-item__descr">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.
@@ -528,7 +510,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="opinions-item opinions-item__ivan">                    
+                <div class="opinions-item opinions-item__ivan animate__animated animate__fadeInRight wow" data-wow-duration= "1s" data-wow-delay= "0.5s" >                    
                     <div class="opinions-item__person">Иван Сёмочкин</div>
                     <div class="opinions-item__subtitle">1 полумарафон</div>
                     <div class="opinions-item__descr">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
@@ -538,7 +520,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="opinions-item opinions-item__julia">                    
+                <div class="opinions-item opinions-item__julia animate__animated animate__fadeInRight wow " data-wow-duration= "1s" data-wow-delay= "0.5s">                    
                     <div class="opinions-item__person">Юлия Дашкина</div>
                     <div class="opinions-item__subtitle">2 полумарафона</div>
                     <div class="opinions-item__descr">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.<br>
@@ -556,7 +538,7 @@
 
     <footer class="footer">
         <!-- <div class="footer__map"></div> -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195991!2d37.644807315901474!3d55.768394980557545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2spl!4v1598293746698!5m2!1sru!2spl" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430481195991!2d37.644807315901474!3d55.768394980557545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2spl!4v1598293746698!5m2!1sru!2spl" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
             <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74 </a>
@@ -576,7 +558,7 @@
             <div class="modal__descr">и мы перезвоним Вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">                
                 <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон" >
                 <input name="email" placeholder="Ваш E-mail" type="email">               
                
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>                
@@ -590,7 +572,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">                
                 <input name="name" required placeholder="Ваше имя" type="text"> 
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">               
                
                 <button class="button button_submit">купить</button>                
@@ -605,10 +587,17 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <a href="#up" class="pageup">
+        <img src="icons/chevron-circle-up-solid.svg" alt="up" >
+    </a>
+    
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script> 
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
    
     <script src="js/script.js"></script>
 </body>

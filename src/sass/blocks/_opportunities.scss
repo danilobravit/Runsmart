@@ -30,6 +30,15 @@
             color: #ff0000;
 
         }
+
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+         
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        
     
 
     }

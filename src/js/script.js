@@ -1,4 +1,4 @@
- $(document).ready(function(){
+$(document).ready(function(){
     $('.carousel__inner').slick({          
         speed: 1000,  
         autoplay: true,
@@ -93,21 +93,65 @@
     validateForms('#consultation-form');
     validateForms('#consultation form');
     validateForms('#order form');
+
+    $('input[name=phone]').mask("+48 999 999 999");
+    
+    $('form').submit(function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {        
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    /*$('form').submit(function(e) {
+        e.preventDefault();                // выкоючает перезагрузку страницы
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",       // куда отправлять запрос
+            data: $(this).serialize()                  //$(this) работаем с текущими данными 
+        }).done(function() {              // когда заполнение формы произошло успешно
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();  // эти формы пропадают
+            $('.overlay, #thanks').fadeIn('slow'); // появляется окошко "спасибо"
+
+            $('form').trigger('reset');   // очистка формы
+        });
+        return false;
+
+    });*/
+    
+
+    // smooth scroll and pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1400){
+            $('.pageup').fadeIn();
+        } 
+        else {
+            $('.pageup').fadeOut();
+
+        }      
+            
+
+    });
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+    new WOW().init();
 }); 
 
-/* const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: true,
-    nav: false
-    
-});
-document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
-});
 
-document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
-}); */
+
